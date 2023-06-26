@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="second_demo"
+    errors="0" failures="1" hostname="" id="" package="second_demo" skipped="0"
+    tests="2" time="17.33" timestamp="">
+  
+    <testcase name="Wikipedia Search 2" classname="second_demo" time="2.511" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Duck Duck Go Search 2" classname="second_demo" time="6.123" assertions="1">  <failure message="Testing if the page title equals &#39;DuckDuckGo&#39; in 5000ms - expected &#34;is &#39;DuckDuckGo&#39;&#34; but got: &#34;DuckDuckGo — Privacy, simplified.&#34; (5131ms)">    at Duck Duck Go Search 2 (/Users/bhavyakarimikonda/Documents/Automation_Frameworks/Nightwatch/tests/second_demo.js:22:15)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

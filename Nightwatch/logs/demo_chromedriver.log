@@ -1,0 +1,2953 @@
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 4444
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1687527951.592][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1687527951.594][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1687527951.594][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1687527951.594][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/qc/p5k0wvrd2sd9snscmr47wdr80000gn/T/.com.google.Chrome.E2sNOK data:,
+[5830:259:0623/191551.658423:WARNING:chrome_main_delegate.cc(593)] This is Chrome version 114.0.5735.133 (not a warning)
+[5830:259:0623/191552.038164:INFO:chrome_browser_cloud_management_controller.cc(167)] Starting CBCM Controller Initialization
+[5830:259:0623/191552.038210:INFO:chrome_browser_cloud_management_controller.cc(195)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:52197/devtools/browser/5cbc7dd7-6943-4b64-aab8-85c66919ced3
+[1687527952.094][DEBUG]: DevTools HTTP Request: http://localhost:52197/json/version
+[1687527952.896][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/114.0.5735.133",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+   "V8-Version": "11.4.183.23",
+   "WebKit-Version": "537.36 (@fbfa2ce68d01b2201d8c667c2e73f648a61c4f4a)",
+   "webSocketDebuggerUrl": "ws://localhost:52197/devtools/browser/5cbc7dd7-6943-4b64-aab8-85c66919ced3"
+}
+
+[1687527952.896][DEBUG]: DevTools HTTP Request: http://localhost:52197/json/list
+[1687527952.909][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:52197/devtools/page/6759DC764FA2FD21F8A9D8DD680367E9",
+   "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:52197/devtools/page/6759DC764FA2FD21F8A9D8DD680367E9"
+} ]
+
+[1687527952.911][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1687527952.914][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1687527952.920][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "96D70D2BBA6223A0F0D7414E4E445F2A",
+      "canAccessOpener": false,
+      "targetId": "6759DC764FA2FD21F8A9D8DD680367E9",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1687527952.920][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527952.921][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "A9A3366EA95ED647A83895001D89F2BD",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "96D70D2BBA6223A0F0D7414E4E445F2A",
+      "canAccessOpener": false,
+      "targetId": "6759DC764FA2FD21F8A9D8DD680367E9",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1687527952.921][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "A9A3366EA95ED647A83895001D89F2BD"
+}
+[1687527952.921][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1687527952.922][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=4) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1687527952.922][DEBUG]: DevTools WebSocket Command: Log.enable (id=5) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.922][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=6) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1687527952.922][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.922][DEBUG]: DevTools WebSocket Command: Page.enable (id=8) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "identifier": "1"
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=4) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Log.enable (id=5) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=6) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Response: Page.enable (id=8) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.929][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42935.687896
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42935.688155
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "context": {
+      "auxData": {
+         "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "2596683532262921796.8314494657015370618"
+   }
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.934][DEBUG]: DevTools WebSocket Command: Page.enable (id=10) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.937][DEBUG]: DevTools WebSocket Response: Page.enable (id=10) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.937][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=11) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.938][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=11) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.938][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=12) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.939][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=12) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "2EFF4F93D547F496A867504566FF5C39",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1687527952.939][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=13) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.939][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=13) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "2EFF4F93D547F496A867504566FF5C39",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1687527952.940][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=14) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "dc321dc2-d01a-4b45-99ef-5124bb99bf2f",
+   "uniqueContextId": "2596683532262921796.8314494657015370618"
+}
+[1687527952.943][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=14) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "6762882715484344941.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":1}"
+         } ]
+      }
+   }
+}
+[1687527952.943][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=15) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "dc321dc2-d01a-4b45-99ef-5124bb99bf2f"
+}
+[1687527952.943][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "114.0.5735.133",
+      "chrome": {
+         "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+         "userDataDir": "/var/folders/qc/p5k0wvrd2sd9snscmr47wdr80000gn/T/.com.google.Chrome.E2sNOK"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:52197"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac os x",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "830629904afd66f0ee36ccfa6d3d9c57"
+}
+[1687527952.943][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=15) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527952.961][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND Navigate {
+   "url": "https://www.wikipedia.org/"
+}
+[1687527952.961][INFO]: Waiting for pending navigations...
+[1687527952.961][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527952.962][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527952.962][INFO]: Done waiting for pending navigations. Status: ok
+[1687527952.962][DEBUG]: DevTools WebSocket Command: Page.navigate (id=17) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "url": "https://www.wikipedia.org/"
+}
+[1687527953.270][DEBUG]: DevTools WebSocket Response: Page.navigate (id=17) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+   "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A"
+}
+[1687527953.270][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "document.URL"
+}
+[1687527953.280][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.283][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[5830:259:0623/191553.299783:ERROR:interface_endpoint_client.cc(697)] Message 0 rejected by interface blink.mojom.WidgetHost
+[1687527953.302][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.302][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "wikipedia.org",
+      "gatedAPIFeatures": [  ],
+      "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+      "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.wikipedia.org",
+      "url": "https://www.wikipedia.org/"
+   },
+   "type": "Navigation"
+}
+[1687527953.302][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "context": {
+      "auxData": {
+         "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.wikipedia.org",
+      "uniqueId": "-8479591661496367966.7297586665067357840"
+   }
+}
+[1687527953.310][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "type": "string",
+      "value": "https://www.wikipedia.org/"
+   }
+}
+[1687527953.310][INFO]: Waiting for pending navigations...
+[1687527953.310][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+2023-06-23 19:15:53.472 Google Chrome Helper (Renderer)[5846:311089] CoreText note: Client requested name ".PingFangSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2023-06-23 19:15:53.472 Google Chrome Helper (Renderer)[5846:311089] CoreText note: Set a breakpoint on CTFontLogSystemFontNameRequest to debug.
+[1687527953.552][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.552][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.552][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.552][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.558][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42936.296836
+}
+[1687527953.558][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.558][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527953.558][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42936.297111
+}
+[1687527953.560][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.560][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1687527953.560][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.560][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE Navigate
+[1687527953.567][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND GetTitle {
+}
+[1687527953.567][INFO]: Waiting for pending navigations...
+[1687527953.567][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.567][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.568][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.568][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=23) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.568][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=23) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.568][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=24) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.568][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=24) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.569][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=25) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "f668e9ee-0591-42c9-83f4-91ee2e60793b",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.570][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=25) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"Wikipedia\"}"
+         } ]
+      }
+   }
+}
+[1687527953.570][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=26) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "f668e9ee-0591-42c9-83f4-91ee2e60793b"
+}
+[1687527953.570][INFO]: Waiting for pending navigations...
+[1687527953.570][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.571][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=26) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.571][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.571][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.571][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE GetTitle "Wikipedia"
+[1687527953.578][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#searchInput"
+}
+[1687527953.578][INFO]: Waiting for pending navigations...
+[1687527953.578][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.579][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.579][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.579][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=29) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.580][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=29) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.580][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=30) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.580][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=30) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.581][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=31) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "8d22fda8-f15b-4099-8046-270150ea9c43",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.587][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=31) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-7832636344084124386.1.2",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "accesskey": "F",
+                  "autocomplete": "off",
+                  "autofocus": "autofocus",
+                  "dir": "auto",
+                  "id": "searchInput",
+                  "name": "search",
+                  "size": "20",
+                  "style": "padding-right: 64px;",
+                  "type": "search"
+               },
+               "backendNodeId": 2,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687527953.587][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=32) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "8d22fda8-f15b-4099-8046-270150ea9c43"
+}
+[1687527953.587][INFO]: Waiting for pending navigations...
+[1687527953.588][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.588][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=32) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.588][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.588][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.588][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "0DB927703EFDB5956C7EB2ACA45F887A_element_2"
+} ]
+[1687527953.590][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND ClearElement {
+   "id": "0DB927703EFDB5956C7EB2ACA45F887A_element_2"
+}
+[1687527953.590][INFO]: Waiting for pending navigations...
+[1687527953.590][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.591][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.591][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.591][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=35) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.591][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=35) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.591][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=36) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "d5f9319b-194c-4786-8421-1eb7b4631797"
+}
+[1687527953.592][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=36) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.592][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=37) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.592][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=37) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.592][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=38) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.3"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "d5f9319b-194c-4786-8421-1eb7b4631797",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.594][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=38) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.4",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"input\"}"
+         } ]
+      }
+   }
+}
+[1687527953.594][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=39) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "d5f9319b-194c-4786-8421-1eb7b4631797"
+}
+[1687527953.594][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=40) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.595][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=39) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.595][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=40) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.595][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=41) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "6a099e0a-cff8-4d63-98d5-309449a2cafb"
+}
+[1687527953.595][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=41) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.5",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.595][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=42) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.596][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=42) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.597][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=43) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.5"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "6a099e0a-cff8-4d63-98d5-309449a2cafb",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.601][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=43) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.6",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"search\"}"
+         } ]
+      }
+   }
+}
+[1687527953.602][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=44) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "6a099e0a-cff8-4d63-98d5-309449a2cafb"
+}
+[1687527953.602][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=45) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.602][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=44) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.602][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=45) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.602][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=46) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "6f197d45-165c-4a34-b56c-2c19b49a1d7d"
+}
+[1687527953.603][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=46) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.7",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.603][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=47) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.603][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=47) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.603][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=48) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.7"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "6f197d45-165c-4a34-b56c-2c19b49a1d7d",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=48) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.8",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":false}"
+         } ]
+      }
+   }
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=49) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "6f197d45-165c-4a34-b56c-2c19b49a1d7d"
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=50) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=49) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=50) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.605][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=51) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "e01ea50f-b3ad-4e1f-9ddb-ca34fc26fc42"
+}
+[1687527953.606][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=51) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.9",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.606][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=52) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.606][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=52) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.607][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=53) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.9"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "e01ea50f-b3ad-4e1f-9ddb-ca34fc26fc42",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.613][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=53) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.10",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687527953.613][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=54) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "e01ea50f-b3ad-4e1f-9ddb-ca34fc26fc42"
+}
+[1687527953.613][INFO]: 
+	=== NOTE: ===
+	The Clear command in ChromeDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1687527953.613][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=55) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.613][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=54) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.614][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=55) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.614][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=56) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "58b8d7e4-95bd-463c-84e2-084bb79654f8"
+}
+[1687527953.614][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=56) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.11",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.614][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=57) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.614][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=57) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.615][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=58) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.11"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "58b8d7e4-95bd-463c-84e2-084bb79654f8",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.621][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=58) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.12",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":null}"
+         } ]
+      }
+   }
+}
+[1687527953.621][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=59) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "58b8d7e4-95bd-463c-84e2-084bb79654f8"
+}
+[1687527953.621][INFO]: Waiting for pending navigations...
+[1687527953.621][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.622][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=59) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.622][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.622][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.622][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE ClearElement
+[1687527953.623][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND TypeElement {
+   "id": "0DB927703EFDB5956C7EB2ACA45F887A_element_2",
+   "text": "Google",
+   "value": [ "G", "o", "o", "g", "l", "e" ]
+}
+[1687527953.623][INFO]: Waiting for pending navigations...
+[1687527953.623][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=61) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.624][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=61) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.624][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.624][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=62) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.624][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=62) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.625][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=63) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "2bf3f89e-c626-4b84-b17d-ac011b5d7f6e"
+}
+[1687527953.625][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=63) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.13",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.625][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=64) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.625][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=64) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.626][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=65) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.13"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "2bf3f89e-c626-4b84-b17d-ac011b5d7f6e",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.631][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=65) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.14",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"INPUT\"}"
+         } ]
+      }
+   }
+}
+[1687527953.631][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=66) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "2bf3f89e-c626-4b84-b17d-ac011b5d7f6e"
+}
+[1687527953.631][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=67) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.632][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=66) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.632][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=67) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.632][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=68) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "9ccfd54c-240b-4080-b252-fd2859dff914"
+}
+[1687527953.632][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=68) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.15",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.632][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=69) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.633][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=69) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.633][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=70) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.15"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "9ccfd54c-240b-4080-b252-fd2859dff914",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.635][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=70) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.16",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"search\"}"
+         } ]
+      }
+   }
+}
+[1687527953.635][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=71) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "9ccfd54c-240b-4080-b252-fd2859dff914"
+}
+[1687527953.635][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=72) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.635][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=71) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=72) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=73) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "73d92ff2-65e1-4d03-bf50-75f8b2cb04ea"
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=73) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.17",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=74) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=74) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.636][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=75) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.17"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "73d92ff2-65e1-4d03-bf50-75f8b2cb04ea",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=75) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.18",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":false}"
+         } ]
+      }
+   }
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=76) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "73d92ff2-65e1-4d03-bf50-75f8b2cb04ea"
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=77) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=76) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=77) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=78) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 2,
+   "objectGroup": "0df9c187-ba2d-43db-a8c5-2c9ccd84886e"
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=78) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLInputElement",
+      "description": "input#searchInput",
+      "objectId": "-7832636344084124386.1.19",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.638][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=79) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.639][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=79) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.639][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=80) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.19"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "0df9c187-ba2d-43db-a8c5-2c9ccd84886e",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.641][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=80) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.20",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"INPUT\"}"
+         } ]
+      }
+   }
+}
+[1687527953.641][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=81) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "0df9c187-ba2d-43db-a8c5-2c9ccd84886e"
+}
+[1687527953.641][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=82) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "awaitPromise": false,
+   "expression": "document.hasFocus()",
+   "returnByValue": true
+}
+[1687527953.642][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=81) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.642][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=82) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "type": "boolean",
+      "value": true
+   }
+}
+[1687527953.642][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=83) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.642][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=83) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.642][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=84) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.643][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=84) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.643][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=85) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "ed9b0edd-7806-41ea-a78a-e0ef740e067b",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.644][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=85) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-7832636344084124386.1.21",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"element-6066-11e4-a52e-4f735466cecf\":0}}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "accesskey": "F",
+                  "autocomplete": "off",
+                  "autofocus": "autofocus",
+                  "dir": "auto",
+                  "id": "searchInput",
+                  "name": "search",
+                  "size": "20",
+                  "style": "padding-right: 64px;",
+                  "type": "search"
+               },
+               "backendNodeId": 2,
+               "childNodeCount": 0,
+               "localName": "input",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687527953.644][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=86) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "ed9b0edd-7806-41ea-a78a-e0ef740e067b"
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=87) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "ShiftLeft",
+   "key": "Shift",
+   "modifiers": 0,
+   "text": "",
+   "type": "rawKeyDown",
+   "unmodifiedText": "",
+   "windowsVirtualKeyCode": 16
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=88) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "G",
+   "modifiers": 8,
+   "text": "G",
+   "type": "rawKeyDown",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=89) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "G",
+   "modifiers": 8,
+   "text": "G",
+   "type": "char",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=90) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "G",
+   "modifiers": 8,
+   "text": "G",
+   "type": "keyUp",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=91) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "ShiftLeft",
+   "key": "Shift",
+   "modifiers": 0,
+   "text": "",
+   "type": "keyUp",
+   "unmodifiedText": "",
+   "windowsVirtualKeyCode": 16
+}
+[1687527953.682][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=92) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "rawKeyDown",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=93) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "char",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=94) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "keyUp",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=95) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "rawKeyDown",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=96) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "char",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=97) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyO",
+   "key": "o",
+   "modifiers": 0,
+   "text": "o",
+   "type": "keyUp",
+   "unmodifiedText": "o",
+   "windowsVirtualKeyCode": 79
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=98) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "rawKeyDown",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=99) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "char",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=100) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyG",
+   "key": "g",
+   "modifiers": 0,
+   "text": "g",
+   "type": "keyUp",
+   "unmodifiedText": "g",
+   "windowsVirtualKeyCode": 71
+}
+[1687527953.683][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=101) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyL",
+   "key": "l",
+   "modifiers": 0,
+   "text": "l",
+   "type": "rawKeyDown",
+   "unmodifiedText": "l",
+   "windowsVirtualKeyCode": 76
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=102) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyL",
+   "key": "l",
+   "modifiers": 0,
+   "text": "l",
+   "type": "char",
+   "unmodifiedText": "l",
+   "windowsVirtualKeyCode": 76
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=103) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyL",
+   "key": "l",
+   "modifiers": 0,
+   "text": "l",
+   "type": "keyUp",
+   "unmodifiedText": "l",
+   "windowsVirtualKeyCode": 76
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=104) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyE",
+   "key": "e",
+   "modifiers": 0,
+   "text": "e",
+   "type": "rawKeyDown",
+   "unmodifiedText": "e",
+   "windowsVirtualKeyCode": 69
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=105) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyE",
+   "key": "e",
+   "modifiers": 0,
+   "text": "e",
+   "type": "char",
+   "unmodifiedText": "e",
+   "windowsVirtualKeyCode": 69
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Command: Input.dispatchKeyEvent (id=106) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "code": "KeyE",
+   "key": "e",
+   "modifiers": 0,
+   "text": "e",
+   "type": "keyUp",
+   "unmodifiedText": "e",
+   "windowsVirtualKeyCode": 69
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=86) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=87) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.684][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=88) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.685][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=89) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.685][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=90) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.685][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=91) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.685][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=92) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.686][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=93) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.686][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=94) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.686][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=95) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.687][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=96) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.687][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=97) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.687][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=98) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=99) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=100) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=101) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=102) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=103) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.688][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=104) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.689][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=105) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.689][DEBUG]: DevTools WebSocket Response: Input.dispatchKeyEvent (id=106) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.689][INFO]: Waiting for pending navigations...
+[1687527953.689][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=107) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.690][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=107) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.690][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.690][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE TypeElement
+[1687527953.692][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND FindElements {
+   "using": "css selector",
+   "value": "button[type=\"submit\"]"
+}
+[1687527953.692][INFO]: Waiting for pending navigations...
+[1687527953.692][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=108) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.693][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=108) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.693][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.693][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=109) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.694][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=109) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.694][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=110) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.694][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=110) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.695][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=111) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "0342122c-5293-452a-af33-4afc374fd3ef",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.701][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=111) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-7832636344084124386.1.22",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "pure-button pure-button-primary-progressive",
+                  "type": "submit"
+               },
+               "backendNodeId": 10,
+               "childNodeCount": 3,
+               "localName": "button",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687527953.701][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=112) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "0342122c-5293-452a-af33-4afc374fd3ef"
+}
+[1687527953.701][INFO]: Waiting for pending navigations...
+[1687527953.701][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=113) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.701][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=112) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.701][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=113) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.701][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.701][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "0DB927703EFDB5956C7EB2ACA45F887A_element_10"
+} ]
+[1687527953.703][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND ClickElement {
+   "id": "0DB927703EFDB5956C7EB2ACA45F887A_element_10"
+}
+[1687527953.703][INFO]: Waiting for pending navigations...
+[1687527953.703][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=114) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.703][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=114) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527953.704][INFO]: Done waiting for pending navigations. Status: ok
+[1687527953.704][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=115) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.704][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=115) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.704][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=116) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "cd6ba6b6-3d5e-4d18-99ea-fc1e655680e9"
+}
+[1687527953.704][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=116) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.23",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.704][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=117) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.705][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=117) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.705][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=118) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.23"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "cd6ba6b6-3d5e-4d18-99ea-fc1e655680e9",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=118) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.24",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"button\"}"
+         } ]
+      }
+   }
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=119) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "cd6ba6b6-3d5e-4d18-99ea-fc1e655680e9"
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=120) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=119) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=120) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.706][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=121) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "53606797-cf84-450b-99f2-59a578e78878"
+}
+[1687527953.707][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=121) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.25",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.707][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=122) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.707][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=122) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.707][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=123) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.25"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "53606797-cf84-450b-99f2-59a578e78878",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.708][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=123) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.26",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"button\"}"
+         } ]
+      }
+   }
+}
+[1687527953.708][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=124) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "53606797-cf84-450b-99f2-59a578e78878"
+}
+[1687527953.709][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=125) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.709][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=124) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.709][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=125) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.709][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=126) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "2d5df2da-cdb7-4511-abc2-f6c8cba18130"
+}
+[1687527953.710][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=126) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.27",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.710][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=127) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.710][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=127) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.711][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=128) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.27"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "2d5df2da-cdb7-4511-abc2-f6c8cba18130",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.713][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=128) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.28",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      }
+   }
+}
+[1687527953.713][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=129) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "2d5df2da-cdb7-4511-abc2-f6c8cba18130"
+}
+[1687527953.713][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=130) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=129) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=130) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=131) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "cf9d4d91-0237-4ce2-bd7e-9a45d2cc2158"
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=131) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.29",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=132) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.714][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=132) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.715][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=133) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.29"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "cf9d4d91-0237-4ce2-bd7e-9a45d2cc2158",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=133) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.30",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":44,\"width\":56}}"
+         } ]
+      }
+   }
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=134) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "cf9d4d91-0237-4ce2-bd7e-9a45d2cc2158"
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=135) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=134) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=135) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.717][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=136) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "3240b94f-4af0-4af5-9380-2d33a49c4eca"
+}
+[1687527953.718][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=136) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.31",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.718][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=137) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.718][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=137) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.718][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=138) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.31"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "3240b94f-4af0-4af5-9380-2d33a49c4eca",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=138) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.32",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":761.59375,\"y\":469.59375,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      }
+   }
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=139) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "3240b94f-4af0-4af5-9380-2d33a49c4eca"
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=140) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=139) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=140) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.723][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=141) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 10,
+   "objectGroup": "332cdfb8-6e05-440a-a6ae-bc5fbeac4a8f"
+}
+[1687527953.724][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=141) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLButtonElement",
+      "description": "button.pure-button.pure-button-primary-progressive",
+      "objectId": "-7832636344084124386.1.33",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527953.724][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=142) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.724][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=142) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "0DB927703EFDB5956C7EB2ACA45F887A",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.wikipedia.org",
+         "url": "https://www.wikipedia.org/"
+      }
+   }
+}
+[1687527953.724][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=143) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.1.33"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "332cdfb8-6e05-440a-a6ae-bc5fbeac4a8f",
+   "uniqueContextId": "-8479591661496367966.7297586665067357840"
+}
+[1687527953.728][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=143) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.1.34",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true,\"message\":\"Element's descendant would receive the click. Consider clicking the descendant instead. Descendant: \u003Ci class=\\\"sprite svg-search-icon\\\" data-jsl10n=..."
+         } ]
+      }
+   }
+}
+[1687527953.728][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=144) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "332cdfb8-6e05-440a-a6ae-bc5fbeac4a8f"
+}
+[1687527953.728][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=145) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "button": "none",
+   "buttons": 0,
+   "clickCount": 0,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseMoved",
+   "x": 789,
+   "y": 491
+}
+[1687527953.729][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=146) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "button": "left",
+   "buttons": 0,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mousePressed",
+   "x": 789,
+   "y": 491
+}
+[1687527953.729][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=147) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "button": "left",
+   "buttons": 1,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseReleased",
+   "x": 789,
+   "y": 491
+}
+[1687527953.729][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=144) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.730][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=145) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.732][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=146) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.734][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=147) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527953.734][INFO]: Waiting for pending navigations...
+[1687527953.734][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=148) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527953.735][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "delay": 0,
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+   "reason": "formSubmissionGet",
+   "url": "https://www.wikipedia.org/search-redirect.php?family=Wikipedia&language=en&search=Google&language=en&go=Go"
+}
+[1687527953.735][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "disposition": "currentTab",
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+   "reason": "formSubmissionGet",
+   "url": "https://www.wikipedia.org/search-redirect.php?family=Wikipedia&language=en&search=Google&language=en&go=Go"
+}
+[1687527953.735][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527953.754][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527954.675][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527954.676][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[1687527954.688][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527954.688][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "wikipedia.org",
+      "gatedAPIFeatures": [  ],
+      "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+      "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Google"
+   },
+   "type": "Navigation"
+}
+[1687527954.688][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "context": {
+      "auxData": {
+         "frameId": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://en.wikipedia.org",
+      "uniqueId": "4194215531179873940.-1773248847199868519"
+   }
+}
+[1687527954.688][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=148) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527954.715][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527954.715][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=149) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527954.723][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=149) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527954.918][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42937.675339
+}
+[1687527954.918][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=150) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527954.971][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527954.972][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=150) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.127][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "timestamp": 42937.881975
+}
+[1687527955.127][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=151) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "4194215531179873940.-1773248847199868519"
+}
+[1687527955.127][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameId": "6759DC764FA2FD21F8A9D8DD680367E9"
+}
+[5830:259:0623/191555.141146:INFO:CONSOLE(369)] "This page is using the deprecated ResourceLoader module "jquery.cookie".
+Merged into "mediawiki.cookie", use that module instead (T271995)", source: https://en.wikipedia.org/w/load.php?lang=en&modules=ext.centralNotice.choiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2CstartUp%7Cext.centralauth.ForeignApi%2Ccentralautologin%7Cext.cite.ux-enhancements%7Cext.cx.eventlogging.campaigns%7Cext.cx.model%7Cext.cx.uls.quick.actions%7Cext.echo.centralauth%7Cext.eventLogging%2CnavigationTiming%2Cpopups%2CwikimediaEvents%7Cext.growthExperiments.SuggestedEditSession%7Cext.quicksurveys.init%2Clib%7Cext.scribunto.logs%7Cext.uls.common%2Ccompactlinks%2Cinterface%2Cpreferences%2Cwebfonts%7Cjquery%2Coojs%2Csite%7Cjquery.client%2Ccookie%2CmakeCollapsible%2Cspinner%2CtextSelection%7Cjquery.spinner.styles%7Cjquery.uls.data%7Cmediawiki.ForeignApi%2CString%2CTitle%2CUri%2Capi%2Cbase%2Ccldr%2Ccookie%2Cexperiments%2CjqueryMsg%2Clanguage%2Crouter%2Cstorage%2Ctoc%2Cuser%2Cutil%2CvisibleTimeout%7Cmediawiki.ForeignApi.core%7Cmediawiki.editfont.styles%7Cmediawiki.libs.pluralruleparser%7Cmediawiki.page.ready%7Cmediawiki.page.watch.ajax%7Cmediawiki.ui.button%2Cicon%7Cmmv.bootstrap%2Chead%7Cmmv.bootstrap.autostart%7Cmw.cx.SiteMapper%7Coojs-ui.styles.icons-interactions%7Cskins.vector.icons.js%7Cskins.vector.js%7Cwikibase.client.vector-2022&skin=vector-2022&version=mo9kt (369)
+[1687527955.141][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "args": [ {
+      "type": "string",
+      "value": "This page is using the deprecated ResourceLoader module \"jquery.cookie\".\nMerged into \"mediawiki.cookie\", use that module instead (T271995)"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 471,
+         "functionName": "",
+         "lineNumber": 368,
+         "scriptId": "37",
+         "url": "https://en.wikipedia.org/w/load.php?lang=en&modules=ext.centralNotice.choiceData%2Cdisplay%2CgeoIP%2CimpressionDiet%2CkvStore%2CstartUp%7Cext.centralauth.ForeignApi%2Ccentralautologin%7Cext.cite.ux..."
+      }, {
+         "columnNumber": 588,
+         "functionName": "runScript",
+         "lineNumber": 10,
+         "scriptId": "31",
+         "url": "https://en.wikipedia.org/w/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=vector-2022"
+      }, {
+         "columnNumber": 56,
+         "functionName": "execute",
+         "lineNumber": 12,
+         "scriptId": "31",
+         "url": "https://en.wikipedia.org/w/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=vector-2022"
+      }, {
+         "columnNumber": 964,
+         "functionName": "doPropagation",
+         "lineNumber": 4,
+         "scriptId": "31",
+         "url": "https://en.wikipedia.org/w/load.php?lang=en&modules=startup&only=scripts&raw=1&skin=vector-2022"
+      } ]
+   },
+   "timestamp": 1.687527955139835e+12,
+   "type": "warning"
+}
+[1687527955.151][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=151) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1687527955.151][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=152) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.185][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=152) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.185][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.185][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE ClickElement
+[1687527955.190][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND FindElements {
+   "using": "css selector",
+   "value": "h1#firstHeading"
+}
+[1687527955.190][INFO]: Waiting for pending navigations...
+[1687527955.190][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=153) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.241][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=153) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.241][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.242][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=154) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.258][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=154) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.258][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=155) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.264][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=155) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.265][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=156) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "abcc569a-56e2-4a12-b1f4-5b5a47cd4c0e",
+   "uniqueContextId": "4194215531179873940.-1773248847199868519"
+}
+[1687527955.271][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=156) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-7832636344084124386.2.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "firstHeading mw-first-heading",
+                  "id": "firstHeading"
+               },
+               "backendNodeId": 48,
+               "childNodeCount": 1,
+               "localName": "h1",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1
+            }
+         } ]
+      }
+   }
+}
+[1687527955.271][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=157) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "abcc569a-56e2-4a12-b1f4-5b5a47cd4c0e"
+}
+[1687527955.272][INFO]: Waiting for pending navigations...
+[1687527955.272][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=158) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.272][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=157) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.272][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=158) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.272][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.272][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "589D2D96B61556544E1DF9534C9AB792_element_48"
+} ]
+[1687527955.274][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND GetElementText {
+   "id": "589D2D96B61556544E1DF9534C9AB792_element_48"
+}
+[1687527955.274][INFO]: Waiting for pending navigations...
+[1687527955.274][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=159) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.275][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=159) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.275][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.275][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=160) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.276][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=160) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.276][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=161) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "backendNodeId": 48,
+   "objectGroup": "dc488066-ca03-4ad8-a2dd-ff22766caa5f"
+}
+[1687527955.276][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=161) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "object": {
+      "className": "HTMLHeadingElement",
+      "description": "h1#firstHeading.firstHeading.mw-first-heading",
+      "objectId": "-7832636344084124386.2.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1687527955.276][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=162) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.277][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=162) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.278][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=163) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [ {
+      "objectId": "-7832636344084124386.2.2"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "dc488066-ca03-4ad8-a2dd-ff22766caa5f",
+   "uniqueContextId": "4194215531179873940.-1773248847199868519"
+}
+[1687527955.318][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=163) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.2.3",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"Google\"}"
+         } ]
+      }
+   }
+}
+[1687527955.318][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=164) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "dc488066-ca03-4ad8-a2dd-ff22766caa5f"
+}
+[1687527955.318][INFO]: Waiting for pending navigations...
+[1687527955.318][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=165) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.320][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=164) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.320][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=165) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.320][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.320][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE GetElementText "Google"
+[1687527955.325][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND GetTitle {
+}
+[1687527955.325][INFO]: Waiting for pending navigations...
+[1687527955.326][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=166) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.361][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=166) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.361][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.361][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=167) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.362][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=167) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.362][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=168) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.365][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=168) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "wikipedia.org",
+         "gatedAPIFeatures": [  ],
+         "id": "6759DC764FA2FD21F8A9D8DD680367E9",
+         "loaderId": "589D2D96B61556544E1DF9534C9AB792",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://en.wikipedia.org",
+         "url": "https://en.wikipedia.org/wiki/Google"
+      }
+   }
+}
+[1687527955.365][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=169) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "570e74bb-d66b-43e2-be74-07ae2f21be1d",
+   "uniqueContextId": "4194215531179873940.-1773248847199868519"
+}
+[1687527955.366][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=169) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-7832636344084124386.2.4",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"Google - Wikipedia\"}"
+         } ]
+      }
+   }
+}
+[1687527955.366][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=170) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "objectGroup": "570e74bb-d66b-43e2-be74-07ae2f21be1d"
+}
+[1687527955.367][INFO]: Waiting for pending navigations...
+[1687527955.367][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=171) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "expression": "1"
+}
+[1687527955.367][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=170) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+}
+[1687527955.367][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=171) (session_id=A9A3366EA95ED647A83895001D89F2BD) 6759DC764FA2FD21F8A9D8DD680367E9 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1687527955.367][INFO]: Done waiting for pending navigations. Status: ok
+[1687527955.367][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE GetTitle "Google - Wikipedia"
+[1687527955.374][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] COMMAND Quit {
+}
+[1687527955.428][INFO]: [830629904afd66f0ee36ccfa6d3d9c57] RESPONSE Quit
+[1687527955.428][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1687527955.428][DEBUG]: Log type 'browser' lost 1 entries on destruction

@@ -1,0 +1,1 @@
+{"name":"demotest","version":"1.0.0","description":"NightwatchJS Practise test","main":"index.js","scripts":{"test":"nightwatch"},"author":"","license":"ISC","devDependencies":{"chromedriver":"^114.0.1","nightwatch":"^2.1.4"}}
